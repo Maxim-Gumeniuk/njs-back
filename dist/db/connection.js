@@ -28,7 +28,7 @@ const sequelize_typescript_1 = require("sequelize-typescript");
 const dotenv = __importStar(require("dotenv"));
 dotenv.config();
 const { DB_PASS, DB_NAME, DB_HOST, DB_USER_NAME } = process.env;
-exports.sequelize = new sequelize_typescript_1.Sequelize(DB_NAME, DB_USER_NAME, DB_PASS, {
+const sequelizeOptions = {
     host: DB_HOST,
     port: 5432,
     dialect: 'postgres',
@@ -38,7 +38,5 @@ exports.sequelize = new sequelize_typescript_1.Sequelize(DB_NAME, DB_USER_NAME, 
             rejectUnauthorized: false,
         },
     },
-});
-exports.sequelize.sync().then(() => {
-    console.log('Database and tables created!');
-});
+};
+exports.sequelize = new sequelize_typescript_1.Sequelize(DB_NAME || '', DB_USER_NAME || '', DB_PASS || '', sequelizeOptions);

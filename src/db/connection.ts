@@ -22,8 +22,3 @@ export const sequelize = new Sequelize(
   DB_PASS || '',
   sequelizeOptions
 );
-
-
-sequelize.sync().then(() => {
-  console.log('Database and tables created!');
-});
