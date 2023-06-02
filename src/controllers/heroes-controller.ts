@@ -168,7 +168,3 @@ export const deleteImageCont = async (req: Request, res: Response) => {
     .status(Responses.OK)
     .json({ message: 'Hero image deleted successfully' });
 };
-
-
-
-  

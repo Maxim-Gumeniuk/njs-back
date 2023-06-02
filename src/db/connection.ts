@@ -24,4 +24,3 @@ export const sequelize = new Sequelize(
 sequelize.sync().then(() => {
   console.log('Database and tables created!');
 });
-    

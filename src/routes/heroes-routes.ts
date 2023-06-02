@@ -22,5 +22,3 @@ heroesRouter.delete(`${ROUTES.ID}`, deleteOneHero);
 heroesRouter.patch(`${ROUTES.ID}`,updateHeroValodation, updateOneHero);
 heroesRouter.post(`${ROUTES.ID}${ROUTES.UPLOAD}`, parser.single('image'), updateImage);
 heroesRouter.delete(`${ROUTES.ID}${ROUTES.DELETE}`, deleteImageCont);
-
-

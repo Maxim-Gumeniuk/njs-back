@@ -6,4 +6,3 @@ export type HeroAttributes = {
     catchPhrase: string;
     images: string[];
   };
-  
