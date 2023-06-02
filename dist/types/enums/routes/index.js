@@ -4,6 +4,7 @@ exports.ROUTES = void 0;
 var ROUTES;
 (function (ROUTES) {
     ROUTES["ROOT"] = "/";
-    ROUTES["UPLOAD"] = "upload";
-    ROUTES["ID"] = ":id";
-})(ROUTES = exports.ROUTES || (exports.ROUTES = {}));
+    ROUTES["UPLOAD"] = "/upload";
+    ROUTES["ID"] = "/:id";
+    ROUTES["DELETE"] = "/delete";
+})(ROUTES || (exports.ROUTES = ROUTES = {}));

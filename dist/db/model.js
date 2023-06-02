@@ -7,12 +7,6 @@ class HeroClass extends sequelize_typescript_1.Model {
 }
 exports.HeroClass = HeroClass;
 exports.HeroModel = connection_1.sequelize.define('Heroes', {
-    id: {
-        type: sequelize_typescript_1.DataType.STRING,
-        primaryKey: true,
-        allowNull: false,
-        field: 'id',
-    },
     nickName: {
         type: sequelize_typescript_1.DataType.STRING,
         allowNull: false,
