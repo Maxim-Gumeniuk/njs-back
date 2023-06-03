@@ -1,5 +1,5 @@
 # njs-back
-Created with Express.js, Multer, Cloudinary Storage, and Postgres on Render.com.
+Created with Express.js, TypeScript,  Multer, Cloudinary Storage, and Postgres on Render.com.
 All commands can be found in the package.json file.
 Simply clone the repository and follow the instructions:
 
